@@ -1,0 +1,2 @@
+# mynewtheme
+My New Theme
