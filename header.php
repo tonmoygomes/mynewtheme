@@ -13,5 +13,6 @@
 	<header class="site-header">
 		<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 		<h5><?php bloginfo('description'); ?></h5>
+		<!-- Trying git commit -->
 	</header>
 
