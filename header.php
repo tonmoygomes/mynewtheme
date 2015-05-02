@@ -14,5 +14,10 @@
 		<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 		<h5><?php bloginfo('description'); ?></h5>
 		<!-- Trying git commit -->
+                <nav class="site-nav">
+                    <ul>
+                        <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+                    </ul>
+                </nav>
 	</header>
 
