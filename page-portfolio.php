@@ -5,7 +5,7 @@ get_header();
 			the_post(); ?>
 			<article class="post">
 			<h2><?php the_title(); ?></h2>
-			<p><?php the_content(); ?></p>
+			<!--<p><?php the_content(); ?></p>-->
 			</article>
 		<?php } //endwhile;
 	} //end if;
@@ -13,4 +13,4 @@ get_header();
             echo "No content found";
 
 get_footer();
- ?>
+?>

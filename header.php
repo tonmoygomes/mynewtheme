@@ -12,7 +12,14 @@
 	<div class="container">
 	<header class="site-header">
 		<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-		<h5><?php bloginfo('description'); ?></h5>
+		<h5>
+                    <?php bloginfo('description'); ?>
+                    <?php if(is_home()){ ?>
+                        - We are on home page
+                    <?php } else if(is_page('portfolio')){ ?>
+                        - We are on a portfolio page
+                    <?php } ?>
+                </h5>
 		<!-- Trying git commit -->
                 <nav class="site-nav">
                     <ul>
