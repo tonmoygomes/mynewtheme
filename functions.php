@@ -1,13 +1,12 @@
 <?php
-add_action( 'wp_enqueue_scripts', 'add_style' );
-
-function add_style(){
-	wp_enqueue_style( 'stylesheet', get_stylesheet_uri(), "screen" );
+function learningWordPress_resources() {
+	
+	wp_enqueue_style('style', get_stylesheet_uri());
 	
 }
-register_nav_menus(
-        array(
-            'primary' => __('Main Menu'),
-            'footer' => __('Footer Menu')
-        )
-);
+add_action('wp_enqueue_scripts', 'learningWordPress_resources');
+// Navigation Menus
+register_nav_menus(array(
+	'primary' => __( 'Primary Menu'),
+	'footer' => __( 'Footer Menu'),
+));
