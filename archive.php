@@ -1,7 +1,32 @@
 <?php
 get_header();
-if (have_posts()) :
-	while (have_posts()) : the_post(); ?>
+if (have_posts()) : ?>
+        
+        <h2><?php
+            if(is_category()){
+                echo "Category Archive : "; single_cat_title();
+            }
+            elseif (is_tag()){
+                echo "Tag Archive : "; single_tag_title();
+            }
+            elseif (is_author()){
+                the_post();
+                echo "Author Archive : "; echo get_the_author();
+            }
+            elseif (is_day()){
+                echo "Daily Archive : "; echo get_the_date();
+            }
+            elseif (is_month()){
+                echo "Monthly Archive : "; echo get_the_date("F Y");
+            }
+            elseif (is_year()){
+                echo "Yearly Archive : "; echo get_the_date("Y");
+            }
+            else{
+                echo 'Archive : ';
+            }
+        ?></h2>
+	<?php while (have_posts()) : the_post(); ?>
 	
 	<article class="post">
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
