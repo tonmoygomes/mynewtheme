@@ -1,4 +1,5 @@
-	<footer class="site-footer">
+	<div class="wrapper">
+	<footer class="site-footer clearfix">
 		
 		<nav class="site-nav">
 			<?php

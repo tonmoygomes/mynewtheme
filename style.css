@@ -1,9 +1,12 @@
 /*
-Theme Name: LearningWordPress
-Author: LearnWebCode
-Author URI: http://www.youtube.com/user/LearnWebCode
-Version: 1.0
-*/
+  Theme Name: The Big Theme
+  Theme URI: http://visualizerbd.com/theme/thebigtheme
+  Author: The Big Man
+  Author URI: http://visualizerbd.com/dead_man
+  Description: The Big Theme was developed for WordPress theme development tutorial purpose
+  Tags: multicolor, black, white, one-column, two-column, custom-widget, custom-sidebar, custom-nav-menues
+  Version: 1.0  
+ */
 
 html {
 	padding: 0;
@@ -24,8 +27,9 @@ a:visited {
 }
 
 p {
-	line-height: 1.65em;
-	margin: 0 0 1em 0;
+    line-height: 1.65em;
+    margin: 0 0 1em 0;
+    text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,15 +44,13 @@ div.container {
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
-/* Content Area */
-article.post {
-	border-bottom: 1px dotted #DDD;
-	margin-bottom: 20px;
+div.container .wrapper {
+	clear: both;
+	overflow: hidden;
 }
-
-article.post:last-of-type {
-	border-bottom: none;
+div.container .main {
+	max-width: 644px;
+	float: left;
 }
 
 /* Header */
@@ -119,6 +121,103 @@ article.post:last-of-type {
 	color: #FFF;
 }
 
+/* Content Area */
+article.post {
+	border-bottom: 1px dotted #DDD;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+article.post:last-of-type {
+	border-bottom: none;
+}
+article.post .thumbnail {
+	float: left;
+	clear: both;
+	overflow: hidden;
+	margin-right: 15px;
+	max-width: 200px;
+	box-sizing: border-box;
+}
+article.post .thumbnail img, article.post .banner-thumbnail img {
+	border: 1px solid #00Aec3;
+	padding: 5px;
+	background: #efefef;
+	-webkit-transition: all .15s ease-in-out 0s;
+	   -moz-transition: all .15s ease-in-out 0s;
+	    -ms-transition: all .15s ease-in-out 0s;
+	     -o-transition: all .15s ease-in-out 0s;
+	        transition: all .15s ease-in-out 0s;
+}
+article.post .thumbnail:hover img{
+	-ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+article.post .banner-thumbnail {
+	margin: 15px auto;
+}
+
+/*-- Sidebar --*/
+.sidebar {
+	max-width: 235px;
+	min-width: 235px;
+	float: right;
+}
+.sidebar .widget {
+	padding: 0 0 0;
+	background: #F3EFE0;
+	margin-bottom: 20px;
+	clear: both;
+	overflow: hidden;
+}
+.sidebar .widget h2 {
+	font-family: 'Arial', sans-serif;
+	margin-bottom: 0px;
+	color: #FFF;
+	padding: 5px 15px;
+	background-color: #3399FF;
+}
+.sidebar .widget p {
+	padding: 0 15px;
+}
+.sidebar .widget ul {
+	margin: 0;
+	padding: 0;
+}
+.sidebar .widget ul li {
+	list-style-type: none;
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #00628B;
+}
+.sidebar .widget ul li:last-of-type {
+	border: none;
+}
+.sidebar .widget ul li a {
+	-webkit-transition: all .25s ease-in-out 0s;
+	   -moz-transition: all .25s ease-in-out 0s;
+	    -ms-transition: all .25s ease-in-out 0s;
+	     -o-transition: all .25s ease-in-out 0s;
+	        transition: all .25s ease-in-out 0s;
+}
+.sidebar .widget ul li a:link, .sidebar .widget ul li a:visited {
+	text-decoration: none;
+	background: #0099CC;
+	color: #FFF;
+	padding: 5px 15px;
+	display: block;
+}
+.sidebar .widget ul li a:hover {
+	background-color: #00628B;
+	padding-left: 20px;
+}
+.page .content-wrapper .main {
+	float: right;
+}
+.sidebar.page-sidebar {
+	float: left;
+}
 /* Footer */
 .site-footer {
 	margin-top: 30px;
@@ -183,15 +282,15 @@ div.info-box p {
 
 /* Post Styles */
 .post h2 {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 p.post-info {
-	font-size: 87%;
-	color: #999;
+    font-size: 87%;
+    color: #999;
 }
 
 p.post-info a:link,
 p.post-info a:visited {
-	color: #999;
+    color: #999;
 }

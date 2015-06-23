@@ -9,7 +9,7 @@
 	
 <body <?php body_class(); ?>>
 	
-	<div class="container">
+	<div class="container clearfix">
 	
 		<!-- site-header -->
 		<header class="site-header">
@@ -34,3 +34,4 @@
 			</nav>
 			
 		</header><!-- /site-header -->
+	<div class="wrapper clearfix">
